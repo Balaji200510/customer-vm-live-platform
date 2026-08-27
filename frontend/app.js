@@ -24,7 +24,7 @@ function connectDashboard() {
     // IMPORTANT:
     // This URL must match the FastAPI route
     const websocketUrl =
-        `ws://127.0.0.1:8000/ws/customer/${customerId}`;
+        `ws://127.0.0.1:8001/ws/customer/${customerId}`;
 
 
     console.log(
