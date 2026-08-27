@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Live Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Customer Live Dashboard</h1>
+
+        <div class="connection-box">
+
+            <label for="customerId">
+                Customer ID:
+            </label>
+
+            <input
+                type="text"
+                id="customerId"
+                value="CUST-001"
+            >
+
+            <button onclick="connectDashboard()">
+                Connect
+            </button>
+
+        </div>
+
+        <div class="status-box">
+
+            <p>
+                <strong>Connection:</strong>
+                <span id="connectionStatus">
+                    Disconnected
+                </span>
+            </p>
+
+            <p>
+                <strong>Customer:</strong>
+                <span id="customer">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Application Status:</strong>
+                <span id="appStatus">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Current Value:</strong>
+                <span id="value">
+                    -
+                </span>
+            </p>
+
+            <p>
+                <strong>Last Updated:</strong>
+                <span id="updated">
+                    -
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
